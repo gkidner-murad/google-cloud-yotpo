@@ -1,0 +1,19 @@
+{
+  "name": "google-cloud-yotpo",
+  "version": "1.0.0",
+  "description": "API proxy between the Murad website frontend and Yotpo Loyalty APIs, deployed on Google Cloud Run.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "functions-framework --target=yotpoProxy"
+  },
+  "engines": {
+    "node": "^22"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^5.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0"
+  }
+}
