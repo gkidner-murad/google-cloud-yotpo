@@ -25,8 +25,7 @@ async function getCustomerByEmail(email) {
     );
   }
 
-  const { customer } = await response.json();
-  return customer;
+  return response.json();
 }
 
 module.exports = { getCustomerByEmail, YotpoApiError };
